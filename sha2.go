@@ -7,6 +7,12 @@ import (
 	"strconv"
 )
 
+/*
+#######################################
+#### http://blog.mustafaakseli.com ####
+#######################################
+*/
+
 func encryptPassword(password string) string {
 	h := sha256.New()
 	h.Write([]byte(password))
@@ -19,7 +25,7 @@ func main() {
 	su := "deneme0deger"
 
 if false {
-		fmt.Println("'tekbiir' değeri şifreli hali --> ", encryptPassword("tekbiir"))
+		fmt.Println("'tekbiir' degeri sifreli hali --> ", encryptPassword("tekbiir"))
 }else{
 	
 	for i := 0; i < 10; i++ {
